@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task board</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+<!-- ======================MAIN========================= -->
+    <main>
+
+<!-- =====================TASK MANAGER =========================== -->
+      <div class="todo">
+        <h1>Task Manager</h1>
+
+        <section class="task">
+          <div class="empty_task">
+            <i class="bx bx-trash"></i>
+            <p>
+              The Task Content is now Empty click on the + Add Task Button to
+              add New Task
+            </p>
+          </div>
+
+          <article class="task_item">
+            <span class="head">
+              <h3 id="task-title">UI/UX Design</h3>
+              <i class="bx bx-trash btn" id="delete"></i>
+            </span>
+            <p>
+              The UI of the users review shouldn't be sophisticated, but "review
+              visibility" should be key, as thats what the page entails
+            </p>
+            <i class="bx bx-edit btn" id="edit"></i>
+            <i class="bx bx-right-arrow-alt btn" id="move"></i>
+          </article>
+
+          <article class="class_item">
+            <span class="head">
+              <h3 id="task-title">Mobile Developer</h3>
+              <i class="bx bx-trash btn" id="delete"></i>
+            </span>
+            <p>
+              I live in johnesberg as a janitor and i love my job, it so
+              describes the kind of personality and i'm really a luminary
+              janitor.
+            </p>
+            <i class="bx bx-edit btn" id="edit"></i>
+            <i class="bx bx-right-arrow-alt btn" id="move"></i>
+          </article>
+        </section>
+
+        <button class="btn" id="add_task">+ Add task</button>
+      </div>
+<!-- =====================END OF TASK MANAGER ========================= -->
+
+<!-- ========================COMPLETED SECTION ======================= -->
+      <div class="done">
+        <h1>Completed Task</h1>
+        <section id="complete">
+          <div class="empty_done">
+            <i class="bx bx-trash"></i>
+            <p>
+              The Task Content is now Empty click on the + Add Task or move 
+              an item from the task manager section.
+            </p>
+          </div>
+
+          <article>
+            <span class="head">
+              <h3 id="task-title">Success / Failure form</h3>
+              <i class="bx bx-trash btn" id="delete"></i>
+            </span>
+            <p class="remarks"><i class='bx bxs-check-circle'></i>Completed Task</p>
+          </article>
+          <article>
+            <span class="head">
+              <h3 id="task-title">Success / Failure form</h3>
+              <i class="bx bx-trash btn" id="delete"></i>
+            </span>
+            <p class="remarks"><i class='bx bxs-check-circle'></i>Completed Task</p>
+          </article>
+        </section>
+      </div>
+<!-- ==========================END OF COMPLETED SECTION ================= -->
+
+
+
+<!-- ===================== DELETE POP-UP========================== -->
+      <div class="delete_popup">
+        <div class="del_pop">
+          <h3>Delete Item</h3>
+          <p>Are you sure you want to delete this Task?</p>
+          <div class="button">
+            <button id="cancel_pop">Cancel</button>
+            <button id="del_pop">Remove</button>
+          </div>
+        </div>
+      </div>
+
+<!-- ===================== END OF DELETE POP-UP ================ -->
+    </main>
+
+<!-- ====================== END OF MAIN =========================== -->
+
+<!-- =========================POP UP FOR EDIT & ADD TASK ==================== -->
+<div class="pop-up">
+  <form action="" class="task_popup">
+    <h1>Add Task</h1>
+    <section class="title">
+      <label for="title">Title</label>
+      <input
+        type="text"
+        name=""
+        id=""
+        minlength="4"
+        maxlength="30"
+        required
+      />
+    </section>
+
+    <section class="desc">
+      <label for="desc">Description</label>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        minlength="10"
+        required
+      ></textarea>
+    </section>
+    <button class="btn" id="submit">Submit</button>
+  </form>
+</div>
+
+<!-- ====================== END OF POP UP FOR EDIT AND ADD TASK =========== -->
+    <script src="script.js"></script>
+  </body>
+</html>
